@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Connect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #e4dad0;">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li class="dropdown">
+                    <span class="dropbtn">DESTINATIONS</span>
+                    <div class="dropdown-content">
+                        <a href="africa.html">Africa</a>
+                        <a href="asia.html">Asia</a>
+                        <a href="europe.html">Europe</a>
+                        <a href="middleeast.html">Middle East</a>
+                        <a href="northamerica.html">North America</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <div class="thin-box">
+            <div class="contact-box">
+                <p class="small-text">Let's connect! Please fill the form below to start a conversation or email me directly at: mariyammohammed11@gmail.com</p>
+                <form action="https://formspree.io/f/mzbndrrp" method="POST">
+                  <label for="name" class="small-text">Name:</label>
+                    <br>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email" class="small-text">Email:</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="message" class="small-text">Message:</label>
+                    <br>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
