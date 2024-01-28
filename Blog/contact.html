@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Let's Connect</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body style="background-color: #e4dad0;">
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="home.html">HOME</a></li>
                 <li><a href="about.html">ABOUT ME</a></li>
                 <li class="dropdown">
                     <span class="dropbtn">DESTINATIONS</span>
@@ -27,19 +27,27 @@
         </nav>
     </header>
 
-    <section id="home">
+    <section id="contact">
         <div class="thin-box">
-            <img src="for_website.JPG" alt="A picture of me" width="346" height="370" class="right-aligned-image">
-            <div class="text-content">
-                <h2><em>Hello</em>, I'm Mariyam!</h2>
-                <p class="small-text">I believe every kind of experience makes you rich. I’m always visiting new places and trying new activities, while eating good food and learning about different cultures.</p>
-           
-                <p class="small-text">I enjoy traveling, I've been to 14 countries and hope to visit more. I plan to start a travel blog to share my experiences and adventures!</p>
+            <div class="contact-box">
+                <p class="small-text">Let's connect! Please fill the form below to start a conversation or email me directly at: mariyammohammed11@gmail.com</p>
+                <form action="https://formspree.io/f/mzbndrrp" method="POST">
+                  <label for="name" class="small-text">Name:</label>
+                    <br>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email" class="small-text">Email:</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="message" class="small-text">Message:</label>
+                    <br>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
-            <div style="clear: both;"></div>
         </div>
     </section>
 
 </body>
 </html>
-
